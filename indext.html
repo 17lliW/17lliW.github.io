@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type= "text/css" href="C:\Coding_Projects\CodeAcademy\index.css">
+    <title>Code Project: CSS Display Property</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header id="nav">
+<ul>
+    <li>Display Property:</li>
+    <li><a href="#nav_inline">Inline</a></li>
+    <li><a href="#nav_block">Block</a></li>
+    <li><a href="#nav_inline_block">Inline-Block</a></li>
+    <li><a href="#nav_none">None</a></li>
+    <!--Only first nav tag works-->
+</ul>
+</header>
+
+<header id="page_header">
+<div class="header_text">
+<h1 id="title">Project CSS:</h1>
+<h1 id="subtitle">The Display Property</h1>
+
+<h2>(Page content inspired by or honestly just ripped mostly from <a href="https://www.w3schools.com/css/css_display_visibility.asp" target="_blank">W3Schools</a>)</h2>
+<h2 id="author">by William Hogard</h2>
+</div>
+</header>
+
+<div class="hook">
+<p>Front-end web development is a pathway to success some consider to be unnatural. This webpage is a project to use early HTML/CSS knowledge to influence the code to create life. No irony here, just a quick lesson on the CSS &ltdisplay&gt property put together to eventually throw into a digital volcano to please the career gods.</p>
+</div>
+
+<div class="content">
+<h2 class="section_title" id="first_section_title">What is the &ltdisplay&gt property?</h2>
+
+<p>The display property specifies if or how an element is displayed. Every HTML element has a default display value depending on what type of element it is. The default display value for most elements is block or inline. Changing an inline element to a block element, or vice versa, can be useful for making the page look a specific way, and still follow the web standards. A common example is making inline &ltli&gt elements for horizontal menus like the one you see above.</p>
+
+<table id="element_examples">
+    <tr>
+        <th>Block-level Elements:</th>
+        <th>Inline Elements:</th>
+    </tr>
+    <tr>
+        <td class="element_example_desc">A block-level element always starts on a new line and takes up the full width available (stretches out to the left and right as far as it can).</td>
+        <td class="element_example_desc">An inline element does not start on a new line and only takes up as much width as necessary. (This is an inline &ltspan&gt element inside a paragraph.)</td>
+    </tr>
+    <tr>
+        <td>
+            <ul>
+                <li>&ltdiv&gt</li>
+                <li>&lth1&gt - &lth6&gt</li>
+                <li>&ltp&gt</li>
+                <li>&ltfooter&gt</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>&ltspan&gt</li>
+                <li>&lta&gt</li>
+                <li>&ltimg&gt</li>
+            </ul>
+        </td>
+    </tr>
+</table>
+
+<h2 id="nav_inline" class="section_title">Display: Inline</a></h2>
+
+<p>The default display for some elements, such as &ltem&gt, &ltstrong&gt, and &lta&gt, is called inline. Inline elements have a box that wraps tightly around their content, only taking up the amount of space necessary to display their content and not requiring a new line after each element. The height and width of these elements cannot be specified in the CSS document. For example, the text of an anchor tag (&lta&gt) will, by default, be displayed on the same line as the surrounding text, and it will only be as wide as necessary to contain its content. The CSS display property provides the ability to make any element an inline element. This includes elements that are not inline by default such as paragraphs, divs, and headings. Below you see an &lth1&gt, &lth3&gt, and &lth6&gt displayed on a single line (albeit with creative padding) that would normally each be shown on their own line.</p>
+
+<table class="example_inline">
+    <tr>
+        <td><img src="https://www.pikpng.com/pngl/b/36-362536_lightsaber-hilt-png-clipart.png" id="hilt1"><h1>Here's</h1></td>
+        <td><img src="https://www.pikpng.com/pngl/b/36-362536_lightsaber-hilt-png-clipart.png" id="hilt2"><h3>An</h3></td>
+        <td><img src="https://www.pikpng.com/pngl/b/36-362536_lightsaber-hilt-png-clipart.png" id="hilt3"><h6>Example</h6></td>
+    </tr>
+</table>
+
+<h2 id="nav_block" class="section_title">Display: Block</h2>
+
+<p>An element that has the display property set to block starts on a new line and takes up the available screen width.<span id="example_block">You can do things such as emphasizing parts of larger texts like quotes by using the normally inline &ltspan&gt tag and setting the display property to block.</span>The above sentence is an example of this. Additionally, you can specify the width and height properties for such elements unlike inline elements.</p>
+
+<h2 id="nav_inline_block" class="section_title">Display: Inline-Block</h2>
+
+<p>Compared to display: inline, the major difference is that display: inline-block allows to set a width and height on the element. Also, with display: inline-block, the top and bottom margins/paddings are respected, but with display: inline they are not. Compared to display: block, the major difference is that display: inline-block does not add a line-break after the element, so the element can sit next to other elements.</p>
+
+<div class="example_inline_block">
+<img src="https://c.tenor.com/vQdMYAXhOW8AAAAd/typing-fast-computer.gif" alt="Banana Hacker Man">
+<p>You can use display: inline-block to make multiple typcially</p>
+<img src="https://c.tenor.com/ofYCY_OJQ1kAAAAd/hacker-hack.gif" alt="Guy Fawkes Hacker">
+<p>block elements display with customized dimensions in a single line.</p>
+<img src="https://i.imgur.com/cN0or7k.gif?noredirect" alt="Dancing Hacker">
+</div>
+
+<h2 id="nav_none" class="section_title">Display: None</h2>
+
+<p>When you set the display property of an element to none, the element is completely taken off the page and it does not have an effect on the layout. Do not confuse display: none with visibility: hidden. The latter also hides the element, but leaves the space it would normally take open or empty.</p>
+
+<table class="example_none">
+    <tr>
+        <td><h1 id="none_display">1</h1></td>
+        <td><h1 id="hidden_visibility">2</h1></td>
+        <td><h1 id="visible">3</h1></td>
+    </tr>
+</table>
+
+<p>The above looks like an off-center number 3, but if you open your browser's dev tools, you can see in the source code that there a little more than meets the eye with this one. There is a number 1 set to display: none that does not appear on screen or take up any space in the page's layout. There is also a number 2 set to visibility: hidden that does not appear on screen, but does take up space in the page. Be sure to use the correct property to achieve your desired effect.</p>
+</div>
+
+</body>
+
+</html>
+
