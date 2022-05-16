@@ -1,0 +1,244 @@
+* {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+html {
+    background-color: #242424;
+}
+
+body {
+    text-align: center;
+    margin: 0px 250px 150px;
+    background-color: white;
+    font-family: georgia, "Times New Roman", serif;
+    color: black;
+    padding: 0 0 25px;
+}
+
+#nav {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: black;
+    text-align: left;
+    height: 30px;
+    font-size: 26px;
+    line-height: 1;
+    width: 100%;
+    color: #F72331;
+    font-family: 'Space Mono', monospace, sans-serif;
+    font-weight: 700;
+    padding-left: 10px;
+}
+
+#nav li {
+    
+    display: inline-block;
+    margin: 0;
+}
+
+#page_header {
+    background-color: #171717;
+    color: #F72331;
+    font-family: 'Space Mono', monospace, sans-serif;
+}
+
+.hook {
+    background-image: url("https://c.tenor.com/72wI2QjWAR8AAAAC/palpatine-emperor.gif");
+    background-size: cover;
+    background-color: #AB1822; 
+    /*Don't forget to set the background color when you're done with the header*/
+    background-repeat: no-repeat;
+    color: #FFE81F;
+    height: 550px;
+    font-weight: 550;
+    font-family: 'Space Mono', monospace, sans-serif;
+    font-size: 24px;
+    text-align: justify;
+    line-height: 2.3;
+}
+
+.hook p {
+    padding: 150px 125px;
+}
+
+#title {
+    padding-top: 50px;
+    font-size: 115px;
+    line-height: 1;
+}
+
+#subtitle {
+    font-size: 60px;
+    padding-top: 10px;
+}
+
+.header_text h2 {
+    padding-top: 20px;
+}
+
+#author {
+    font-style: italic;
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 7px;
+}
+
+.content {
+    padding: 0 150px;
+    text-align: left;
+    
+    font-size: 20px;
+}
+
+.content p {
+    margin: 30px 0;
+}
+
+.section_title {
+    margin: 50px 0 30px; 
+    font-size: 50px;
+    text-indent: 45px;
+}
+
+#first_section_title {
+    text-align: center;
+    margin: 50px 0;
+}
+
+#element_examples {
+    text-align: center;
+}
+
+#element_examples th {
+    margin: 20px  0;
+    font-size: 24px;
+}
+
+#element_examples td {
+    padding: 7px 30px;
+}
+
+#element_examples li {
+    list-style: none;
+}
+
+.element_example_desc {
+    text-align: justify;
+}
+
+.example_inline {
+    text-align: center;
+    padding: 20px 0;
+    margin: 0;
+    width: 100%;
+}
+
+.example_inline td {
+    padding: 0px 10px;
+}
+
+.example_inline h1,
+.example_inline h3,
+.example_inline h6 {
+    display: inline;
+    vertical-align: middle;
+    border-radius: 0 100vw 100vw 0;
+}
+
+.example_inline h1 {
+    background-color: #EB212E;
+    padding: 0px 80px;
+}
+
+.example_inline h3 {
+    background-color: #7851a9;
+    padding: 0px 60px;
+}
+
+.example_inline h6 {
+    background-color: #2E67F8;
+    padding: 0px 40px;
+}
+
+#hilt1,
+#hilt2,
+#hilt3 {
+    vertical-align: middle;
+}
+
+#hilt1 {
+    width: 150px;
+    height: 46px;
+}
+
+#hilt2 {
+    width: 90px;
+    height: 30px;
+}
+
+#hilt3 {
+    width: 60px;
+    height: 20px;
+}
+
+#example_block {
+    display: block;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 125%;
+    text-align: justify;
+    margin: 15px auto;
+    padding: 0 25px;
+    background-color: #FFE81F;
+    border-radius: 100vw;
+    text-indent: 0;
+    width: 75%;
+}
+
+.example_inline_block {
+    text-align: center;
+}
+
+.example_inline_block img,
+.example_inline_block p {
+    display: inline-block;
+    vertical-align:middle;
+}
+
+.example_inline_block img {
+    height: 150px;
+    width: 200px;
+}
+
+.example_inline_block p {
+    width: 150px;
+    padding: 0px 25px;
+    margin: 0px;
+    vertical-align: middle;
+}
+
+.example_none {
+    margin: 0 auto;
+    background-color: black;
+    color: #FFE81F;
+    text-align: center;
+}
+
+.example_none h1 {
+    display: inline-block;
+    text-indent: 0;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: .85;
+    font-size: 50px;
+}
+
+#none_display {
+    display: none;
+}
+
+#hidden_visibility {
+    visibility: hidden;
+}
